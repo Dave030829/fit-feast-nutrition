@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="\css\mealPlanner.css">
+    <script src="\js\mealPlanner.js"></script>
+    <title>Nutrition planner</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="\images\main_logo.jpg" alt="">
+            </div>
+            <ul class="links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="#nutritioninfo">Nutrition Info</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        
+        <div class="dropdown_menu">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="#nutritioninfo">Nutrition Info</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+        </div>
+    </header>
+
+    <div class="box">
+        <div class="radio-section">
+            <label for="gender">Select your gender:</label>
+
+            <div class="radio-item">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+            </div>
+
+            <div class="radio-item">
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+        </div>
+
+        <form>
+            <div class="input1">
+            <label for="input1">Weigth:</label>
+            <input type="text" id="input1" name="input1"><br>
+            </div>
+
+            <div class="input2">
+            <label for="input2">Heigth:</label>
+            <input type="text" id="input2" name="input2"><br>
+            </div>
+
+            <div class="input3">
+            <label for="input3">Age:</label>
+            <input type="text" id="input3" name="input3"><br>
+            </div>
+        </form>
+
+
+            <div class="button">
+                <button onclick="checkGender()" class="button-29" role="button">Display calories</button>
+            </div>
+
+            <p></p>
+            <div class="output-style">
+                <output id="output"></output>
+            </div>
+    </div>
+
+</body>
+</html>
